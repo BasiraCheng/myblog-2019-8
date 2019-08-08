@@ -6,6 +6,6 @@ let server = http.createServer(function (req,res){
     res.end()
 })
 var port = process.env.PORT
-server.listen(8888, function(){
+server.listen(port||8888, function(){
      console.log(`Server is listening on port 8888`)
 })
